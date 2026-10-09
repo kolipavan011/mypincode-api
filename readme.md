@@ -72,10 +72,10 @@ You can access the returned information like this:
 ```js
 const result = await api.get("422001");
 
-for (const pincode in result) {
-    console.log("PIN Code:", pincode.pincode);
-    console.log("State:", pincode.state);
-    console.log("District:", pincode.district);
+for (const i in result) {
+    console.log("PIN Code:", pincode[i].pincode);
+    console.log("State:", pincode[i].state);
+    console.log("District:", pincode[i].district);
 }
 ```
 
@@ -90,10 +90,10 @@ async function main() {
     try {
         const result = await api.get("422001");
 
-        for (const pincode in result) {
-            console.log("PIN Code:", pincode.pincode);
-            console.log("State:", pincode.state);
-            console.log("District:", pincode.district);
+        for (const i in result) {
+            console.log("PIN Code:", pincode[i].pincode);
+            console.log("State:", pincode[i].state);
+            console.log("District:", pincode[i].district);
         }
     } catch (error) {
         console.error("Error:", error.message);
@@ -236,6 +236,10 @@ The exact fields available in `data` depend on the information provided by the M
 ## License
 
 MIT
+
+## Links
+
+[Api Documetation](https://mypincode.live/api-documentation)
 
 ## Support
 
