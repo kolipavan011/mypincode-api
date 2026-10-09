@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "JavaScript SDK for the MyPincode API",
   "homepage": "https://mypincode.live",
+  "author": "Pavan Koli <kolipavan011@gmail.com>",
   "type": "module",
   "main": "./src/index.js",
   "repository": {
