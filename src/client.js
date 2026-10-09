@@ -3,7 +3,7 @@ import { MyPincodeError } from "./errors.js";
 class MyPincode {
     constructor(options = {}) {
         const {
-            baseUrl = "https://mypincode.test/api",
+            baseUrl = "https://mypincode.live/api",
             timeout = 10000
         } = options;
 
